@@ -1,85 +1,94 @@
-# Green Mind - Plataforma de Educação Ambiental
+# 🌱 Green Mind - Plataforma Gamificada de Educação Ambiental
 
-Green Mind é uma plataforma gamificada de educação ambiental, inspirada no Duolingo, que oferece trilhas de aprendizado sobre temas ambientais como Água, Energia, Clima e Reciclagem.
+**Green Mind** é uma plataforma interativa de educação ambiental, com abordagem gamificada inspirada no Duolingo. Através de trilhas temáticas, os usuários podem aprender de forma leve e envolvente sobre assuntos como **Água**, **Energia**, **Clima** e **Reciclagem**.
 
-## Funcionalidades
+---
 
-- Sistema de autenticação (login/registro)
-- Trilhas de aprendizado com diferentes níveis
-- Perguntas e respostas de múltipla escolha
+## 🚀 Funcionalidades
+
+- Autenticação de usuários (login e registro)
+- Trilhas de aprendizado com níveis progressivos
+- Quiz interativo com perguntas de múltipla escolha
 - Sistema de progresso e conquistas
-- Interface moderna e responsiva
-- Gamificação com feedback imediato
+- Feedback instantâneo para respostas
+- Interface moderna, acessível e responsiva
+- Gamificação para maior engajamento do usuário
 
-## Tecnologias Utilizadas
+---
+
+## 🛠️ Tecnologias Utilizadas
 
 ### Frontend
-- React
-- Material-UI
-- React Router
-- Axios
-- Framer Motion
+- [React](https://reactjs.org/)
+- [Material-UI](https://mui.com/)
+- [React Router](https://reactrouter.com/)
+- [Axios](https://axios-http.com/)
+- [Framer Motion](https://www.framer.com/motion/)
 
 ### Backend
-- Node.js
-- Express
-- MySQL
-- JWT para autenticação
-- Bcrypt para hash de senhas
+- [Node.js](https://nodejs.org/)
+- [Express](https://expressjs.com/)
+- [MySQL](https://www.mysql.com/)
+- [JWT](https://jwt.io/) (JSON Web Token) para autenticação
+- [Bcrypt](https://github.com/kelektiv/node.bcrypt.js) para hash de senhas
 
-## Requisitos
+---
+
+## 📦 Pré-requisitos
 
 - Node.js (v14 ou superior)
 - MySQL (v8 ou superior)
-- XAMPP (ou similar) para ambiente de desenvolvimento
+- XAMPP (ou similar) para ambiente de desenvolvimento local
 
-## Instalação
+---
 
-1. Clone o repositório:
+## ⚙️ Instalação e Execução
+
+### 1. Clone o repositório
 ```bash
 git clone https://github.com/seu-usuario/green-mind.git
 cd green-mind
-```
+2. Configure o banco de dados
+Inicie o XAMPP e ative o serviço MySQL
 
-2. Configure o banco de dados:
-- Inicie o XAMPP e ative o MySQL
-- Importe o arquivo `db.sql` no phpMyAdmin
+Acesse o phpMyAdmin e importe o arquivo db.sql contido no projeto
 
-3. Instale as dependências do backend:
-```bash
+3. Instale as dependências do backend
+bash
+Copiar
+Editar
 cd backend
 npm install
-```
-
-4. Instale as dependências do frontend:
-```bash
+4. Instale as dependências do frontend
+bash
+Copiar
+Editar
 cd ../frontend
 npm install
-```
+5. Configure as variáveis de ambiente
+Ajuste as credenciais de acesso ao banco em backend/config/database.js
 
-5. Configure as variáveis de ambiente:
-- No arquivo `backend/config/database.js`, ajuste as credenciais do banco de dados se necessário
-- No arquivo `backend/server.js`, defina uma chave secreta para o JWT
+Defina uma chave JWT no backend/server.js para a autenticação
 
-## Executando o Projeto
-
-1. Inicie o backend:
-```bash
+▶️ Como Executar
+Iniciar o backend:
+bash
+Copiar
+Editar
 cd backend
 npm run dev
-```
-
-2. Em outro terminal, inicie o frontend:
-```bash
+Iniciar o frontend (em outro terminal):
+bash
+Copiar
+Editar
 cd frontend
 npm start
-```
+A aplicação estará disponível em: http://localhost:3000
 
-3. Acesse a aplicação em `http://localhost:3000`
-
-## Estrutura do Projeto
-
-```
+📁 Estrutura de Diretórios
+pgsql
+Copiar
+Editar
 green-mind/
 ├── frontend/
 │   ├── src/
@@ -94,16 +103,27 @@ green-mind/
 │   ├── routes/
 │   └── server.js
 └── db.sql
-```
+🤝 Contribuindo
+Contribuições são bem-vindas! Para colaborar:
 
-## Contribuição
+Faça um fork deste repositório
 
-1. Faça um fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`)
-3. Commit suas mudanças (`git commit -m 'Adiciona nova feature'`)
-4. Push para a branch (`git push origin feature/nova-feature`)
-5. Abra um Pull Request
+Crie uma nova branch com sua feature:
 
-## Licença
+bash
+Copiar
+Editar
+git checkout -b feature/nova-feature
+Commit suas alterações:
 
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes. 
+bash
+Copiar
+Editar
+git commit -m "Adiciona nova feature"
+Envie para o seu repositório:
+
+bash
+Copiar
+Editar
+git push origin feature/nova-feature
+Abra um Pull Request
